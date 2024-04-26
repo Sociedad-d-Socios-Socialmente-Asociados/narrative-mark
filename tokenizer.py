@@ -32,6 +32,8 @@ def tokenize(code):
                 metatext = value[2:]
             elif kind == 'TÍTULO':
                 metatext = re.search(r'\[T:\s*(.*?)\]', value).group(1)
+            elif kind == 'ESCENA':
+                metatext = value[1:]
             else:
                 metatext = None
 
@@ -40,8 +42,8 @@ def tokenize(code):
             yield (kind, value, metatext, line_num, token_pos)
 
             # If the token is a container token, recursively find tokens inside it
-            if kind in ('ACCIÓN', 'ACOTACIÓN'):
-                for nested_token in find_tokens(value[1:-1], line_num, token_pos + 1):
+            if kind in ('ACCIÓN', 'ACOTACIÓN', 'DIÁLOGO', 'ESCENA'):
+                for nested_token in find_tokens(metatext, line_num, token_pos + 1):
                     yield nested_token
 
         line_num += 1  # Increment line_num for each line
