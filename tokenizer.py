@@ -5,7 +5,7 @@ def tokenize(code):
         ('TRANSICIÓN', r'>>.*'),
         ('ESCENA', r'>.*'),
         ('ACCIÓN', r'<[^>]+>'),
-        ('PERSONAJE', r'@\w+\b'),
+        ('PERSONAJE', r'@(?:[^\s@]+(?:@[^\s@]+)*)'),
         ('ACOTACIÓN', r'\([^)]+\)'),
         ('DIÁLOGO', r'--.*'),
         ('TÍTULO', r'\[T:\s*[^\]]+\]'),
