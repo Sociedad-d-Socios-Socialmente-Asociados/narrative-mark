@@ -1,5 +1,6 @@
 import re
 
+
 def tokenize(code):
     token_specification = [
         ('TRANSICIÓN', r'>>.*'),
@@ -9,6 +10,7 @@ def tokenize(code):
         ('ACOTACIÓN', r'\([^)]+\)'),
         ('DIÁLOGO', r'--.*'),
         ('TÍTULO', r'\[T:\s*[^\]]+\]'),
+        ('TEXTO', r'.+?(?=>>|>|<|@|\(|--|$)')
     ]
     tok_regex = '|'.join('(?P<%s>%s)' % pair for pair in token_specification)
 
@@ -41,6 +43,9 @@ def tokenize(code):
                 metatext = re.search(r'\[T:\s*(.*?)\]', value).group(1)
             elif kind == 'ESCENA':
                 metatext = value[1:]
+            elif kind == 'TEXT':
+                metatext = value
+
             else:
                 metatext = None
 
@@ -51,7 +56,7 @@ def tokenize(code):
             yield (token_id, kind, value, metatext, line_num, token_pos)
 
             # If the token is a container token, recursively find tokens inside it
-            if kind in ('ACCIÓN', 'ACOTACIÓN', 'DIÁLOGO', 'ESCENA'):
+            if kind in ('ACCIÓN', 'ACOTACIÓN', 'DIÁLOGO', 'ESCENA', 'TÍTULO', 'TRANSICIÓN'):
                 token_id_counter.append(1)
                 for nested_token in find_tokens(metatext, line_num, token_pos + 1):
                     yield nested_token
