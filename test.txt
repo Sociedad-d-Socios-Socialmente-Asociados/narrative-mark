@@ -1,4 +1,4 @@
-[T: La pelea]
+[T: La pelea (del siglo)]
 [T:La pelea sin espacio]
 >1. int. piso compartido / recibidor y comedor - tarde
 @Francisco le dice a @Fernando --Eres un bobo, querido @Fernando

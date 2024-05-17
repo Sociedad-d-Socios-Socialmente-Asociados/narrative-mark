@@ -56,7 +56,7 @@ def tokenize(code):
             yield (token_id, kind, value, metatext, line_num, token_pos)
 
             # If the token is a container token, recursively find tokens inside it
-            if kind in ('ACCIÓN', 'ACOTACIÓN', 'DIÁLOGO', 'ESCENA', 'TÍTULO', 'TRANSICIÓN'):
+            if kind in ('ACCIÓN', 'ACOTACIÓN', 'DIÁLOGO', 'ESCENA', 'TRANSICIÓN'):
                 token_id_counter.append(1)
                 for nested_token in find_tokens(metatext, line_num, token_pos + 1):
                     yield nested_token
@@ -74,7 +74,8 @@ def tokenize(code):
         line_num += 1
 
 
-file_name = input("Enter the name of the file: ")
+# file_name = input("Enter the name of the file: ")
+file_name = "test.txt"
 
 
 try:
