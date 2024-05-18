@@ -61,7 +61,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 7](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso7.jpg?raw=true)
 
-**------------------------------------------ Ejemplo de archivo de texto a analizar -------------------------------------------**
+**------------------------------------------ Ejemplo de archivo de texto a analizar ------------------------------------------**
 - - - -
 
 
