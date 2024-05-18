@@ -8,7 +8,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 1](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso1.jpg?raw=true)
 
-**------------------------------------------ Vista del acceso a la liga de Github  -----------------------------------------------**
+**------------------------------------------ Vista del acceso a la liga de Github  ----------------------------------------------**
 - - - -
 
 *  2. Seleccionar la opción “<> Code”
@@ -61,7 +61,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 7](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso7.jpg?raw=true)
 
-**------------------------------------------ Ejemplo de archivo de texto a analizar -----------------------------------------------**
+**------------------------------------------ Ejemplo de archivo de texto a analizar -------------------------------------------**
 - - - -
 
 
