@@ -8,7 +8,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 1](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso1.jpg?raw=true)
 
-**------------------------------------------------------- Vista del acceso a la liga de Github  -----------------------------------------------------------**
+**--------------------------------------------- Vista del acceso a la liga de Github  --------------------------------------------------**
 - - - -
 
 *  2. Seleccionar la opción “<> Code”
@@ -16,7 +16,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 2](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso2.jpg?raw=true)
 
-**------------------------------------------------------- Desplegar la opción de descarga  -------------------------------------------------------------**
+**--------------------------------------------- Desplegar la opción de descarga  --------------------------------------------------**
 - - - -
 
 
@@ -25,7 +25,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 3](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso3.jpg?raw=true)
 
-**------------------------------------------------------- Descargar el archivo .zip  ----------------------------------------------------------------------**
+**--------------------------------------------- Descargar el archivo .zip  --------------------------------------------------**
 - - - -
 
 *  4. Ubicar el archivo descargado dentro del ordenador y extraer el archivo .zip
@@ -33,7 +33,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 4](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso4.jpg?raw=true)
 
-**------------------------------------------------------- Extracción del archivo .zip ---------------------------------------------------------------------**
+**--------------------------------------------- Extracción del archivo .zip --------------------------------------------------**
 - - - -
 
 
@@ -44,7 +44,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 5](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso5.jpg?raw=true)
 
-**------------------------------------------------------- Acceso la ubicación del archivo -----------------------------------------------------------------**
+**--------------------------------------------- Acceso la ubicación del archivo --------------------------------------------------**
 - - - -
 
 * 2. Ejecutar el comando “python tokenizer.py”
@@ -52,7 +52,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 6](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso6.jpg?raw=true)
 
-**------------------------------------------------------- Ejecución del archivo de Python -----------------------------------------------------------------**
+**--------------------------------------------- Ejecución del archivo de Python --------------------------------------------------**
 - - - -
 
 
@@ -61,7 +61,7 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 7](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso7.jpg?raw=true)
 
-**------------------------------------------------------- Ejemplo de archivo de texto a analizar ----------------------------------------------------------**
+**--------------------------------------------- Ejemplo de archivo de texto a analizar --------------------------------------------------**
 - - - -
 
 
@@ -70,14 +70,14 @@ https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
 - - - -
 ![figura 8](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso8.jpg?raw=true)
 
-**------------------------------------------------------- Ejemplo de salida exitosa --------------------------------------------------------------------**
+**--------------------------------------------- Ejemplo de salida exitosa --------------------------------------------------**
 - - - -
 
 
 - - - -
 ![figura 9](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/blob/main/Images/ManualTecnico/Paso9.jpg?raw=true)
 
-**------------------------------------------------------- Ejemplo de salida no exitosa -----------------------------------------------------------------**
+**--------------------------------------------- Ejemplo de salida no exitosa ---------------------------------------------------**
 - - - -
 
 
