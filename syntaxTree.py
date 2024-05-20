@@ -58,6 +58,6 @@ def run_syntax_tree(token_list) -> tuple:
     root_list = build_trees(token_list)
     error = verify_trees(root_list)
     if not error:
-        return token_list, True
+        return root_list, True
     else:
         return error, False
