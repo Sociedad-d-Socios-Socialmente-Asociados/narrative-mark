@@ -1,4 +1,5 @@
 import re
+from typing import Generator, List
 
 
 def tokenize(code):
@@ -73,20 +74,12 @@ def tokenize(code):
             yield token
         line_num += 1
 
-
-# file_name = input("Enter the name of the file: ")
-file_name = "test.txt"
-
-
-try:
-    with open(file_name, 'r', encoding='utf-8') as file:
-        code = file.read()
-except FileNotFoundError:
-    print("File not found.")
-    exit()
-
-
-print('TOKEN LIST:')
-tokenized_code = tokenize(code)
-for token in tokenized_code:
-    print(token)
+def run_tokenizer(file_name) -> List[Generator[tuple[str, str | None, str, str | Any | None, Any, int] | Any, Any, None]]:
+    try:
+        with open(file_name, 'r', encoding='utf-8') as file:
+            code = file.read()
+    except FileNotFoundError:
+        print("File not found. If you entered the name of the file, make sure it is in the same folder as the compiler, otherwise, enter the full path of the file.")
+        exit()
+    
+    return list(tokenize(code))
