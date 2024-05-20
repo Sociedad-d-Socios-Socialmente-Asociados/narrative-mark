@@ -1,16 +1,15 @@
 import re
-from typing import Generator, List
+from typing import Any, Generator, List
 
-
-def tokenize(code):
+def tokenize(code) -> Generator[tuple[str, str | None, str, str | Any | None, Any, int] | Any, Any, None]:
     token_specification = [
-        ('TRANSICIÓN', r'>>.*'),
+        ('TRANSICION', r'>>.*'),
         ('ESCENA', r'>.*'),
-        ('ACCIÓN', r'<[^>]+>'),
+        ('ACCION', r'<[^>]+>'),
         ('PERSONAJE', r'@(?:[^\s@]+(?:@[^\s@]+)*)'),
-        ('ACOTACIÓN', r'\([^)]+\)'),
-        ('DIÁLOGO', r'--.*'),
-        ('TÍTULO', r'\[T:\s*[^\]]+\]'),
+        ('ACOTACION', r'\([^)]+\)'),
+        ('DIALOGO', r'--.*'),
+        ('TITULO', r'\[T:\s*[^\]]+\]'),
         ('TEXTO', r'.+?(?=>>|>|<|@|\(|--|$)')
     ]
     tok_regex = '|'.join('(?P<%s>%s)' % pair for pair in token_specification)
@@ -34,17 +33,17 @@ def tokenize(code):
 
             if kind == 'MISMATCH':
                 raise RuntimeError(f'{value!r} unexpected on line {line_num}')
-            elif kind in ('ACCIÓN', 'ACOTACIÓN'):
+            elif kind in ('ACCION', 'ACOTACION'):
                 metatext = value[1:-1]
             elif kind == 'PERSONAJE':
                 metatext = value[1:]
-            elif kind in ('DIÁLOGO', 'TRANSICIÓN'):
+            elif kind in ('DIALOGO', 'TRANSICION'):
                 metatext = value[2:]
-            elif kind == 'TÍTULO':
+            elif kind == 'TITULO':
                 metatext = re.search(r'\[T:\s*(.*?)\]', value).group(1)
             elif kind == 'ESCENA':
                 metatext = value[1:]
-            elif kind == 'TEXT':
+            elif kind == 'TEXTO':
                 metatext = value
 
             else:
@@ -57,7 +56,7 @@ def tokenize(code):
             yield (token_id, kind, value, metatext, line_num, token_pos)
 
             # If the token is a container token, recursively find tokens inside it
-            if kind in ('ACCIÓN', 'ACOTACIÓN', 'DIÁLOGO', 'ESCENA', 'TRANSICIÓN'):
+            if kind in ('ACCION', 'ACOTACION', 'DIALOGO', 'ESCENA', 'TRANSICION'):
                 token_id_counter.append(1)
                 for nested_token in find_tokens(metatext, line_num, token_pos + 1):
                     yield nested_token

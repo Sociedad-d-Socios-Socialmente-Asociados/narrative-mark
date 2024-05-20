@@ -11,7 +11,6 @@ if success:
     print("Syntax tree is valid.")
 else:
     print("Syntax tree is invalid.")
-    print(root_nodes)
 
 # TODO: Semantic Analysis
 if run_semantic_analyzer(root_nodes, token_list):
