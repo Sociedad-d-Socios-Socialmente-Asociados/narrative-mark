@@ -1,9 +1,40 @@
-[T: La pelea (del siglo)]
+[T: CONVIVE TÚ]
 >1. int. piso compartido / recibidor y comedor - tarde
-@Francisco
---Eres un bobo, querido 
-@Fernando
---Creo jaja
-<@Francisco procede a pegarle a @Fernando (riéndose)>
->> Fundido el amigo
-<Nadie responde. @Rubén deja el cucharón (mientras ve fijamente a @Mario) y se dirige al pasillo.>
+<Nos encontramos en un piso. La puerta principal se abre y entra @rubén (22), con su mochila de estudiante al hombro. @rubén cierra la puerta y camina hasta el comedor. En el comedor está @guillermo (23), sentado frente a una mesa, enfrascado en lo que parecen experimentos de química. En la mesa hay tubos de ensayo, probetas, etc.>
+@Rubén
+--¡Hey!
+@guillermo
+--(sin girarse) Mira, no te pierdas esto.
+<@Rubén se acerca a mirar. @Guillermo echa unas gotas en un tubo de ensayo. Sale un poco de humo.>
+@guillermo
+--¿Has visto? Reacciona bien... ¡Ajá!
+@rubén
+--Vale, pero como no me digas qué es...
+@guillermo
+--Un disolvente que estoy inventando. ¡Potentísimo! Si metes el dedo, en dos minutos adiós dedo. La fórmula lleva Coca-Cola. Por cierto, he tenido que cogerte un par de latas que tenías en la nevera.
+@rubén
+--No importa. Interesante... Bueno, voy a ver si me pongo a estudiar, que tengo el examen dentro de dos semanas y todavía no me he mirado nada.
+@guillermo
+--Ponte, ponte, no sea que te cateen. Oye, mañana vendrá a comer un primo mío, que ha empezado a trabajar aquí al lado. Estarás, ¿no? Nos podrías hacer esos espaguetis que te salen tan bien.
+@rubén
+--Sí, claro, y luego os friego los platos, ¿no? ¡Qué morro!
+>>Corte a:
+>2. int. piso compartido / cocina - día
+<@Rubén está cocinando espaguetis. Coge uno y lo prueba para ver si está al dente. Suena el TIMBRE DE LA PUERTA.>
+@rubén
+--(gritando hacia el comedor) ¡Guillermo! ¡Será tu primo!
+<Nadie responde.>
+@rubén
+--(gritando hacia el comedor) ¡Guillermo!
+<Nadie responde. @Rubén deja el cucharón y se dirige al pasillo.>
+@rubén
+--¡Ya voy!
+>>Corte a:
+>3. INT. PISO COMPARTIDO / RECIBIDOR - DÍA
+<@Rubén abre la puerta. Se queda sorprendido al ver fuera a un policía. Se trata de @ángel (30).>
+@ángel
+--Tranquilo, que no estoy de servicio. ¿Está Guillermo? Soy @Ángel, su primo.
+@rubén
+--Ah, hola. Yo soy Rubén (se dan la mano). Está y no está. Ahí, en el comedor.
+<@Ángel entra.>
+>>Fundido
