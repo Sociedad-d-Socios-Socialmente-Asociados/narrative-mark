@@ -38,7 +38,6 @@ def assign_colors_to_characters(token_list):
             character_name = complex_names(token[3].upper())
             if character_name not in characters:
                 characters[character_name] = generate_random_color()
-    print(characters)
     return characters
 
 
