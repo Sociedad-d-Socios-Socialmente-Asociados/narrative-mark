@@ -1,6 +1,6 @@
 import random
 from reportlab.lib.pagesizes import letter
-from reportlab.lib.styles import ParagraphStyle, LineStyle
+from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.enums import TA_CENTER, TA_RIGHT
@@ -15,8 +15,16 @@ def generate_random_color():
     """
     return colors.Color(random.random(), random.random(), random.random(), alpha=1)
 
+def complex_names(name: str):
+    """
+    Replace the '@' character with a space in the name of the character.
+    """
+    if '@' in name:
+        return name.replace('@', ' ')
+    else:
+        return name
 
-def assign_colors_to_characters(tokens: List[TokenNode]):
+def assign_colors_to_characters(token_list):
     """
     Assign colors to characters.
     Args:
@@ -25,11 +33,12 @@ def assign_colors_to_characters(tokens: List[TokenNode]):
         Dictionary of characters with their assigned colors.
     """
     characters = {}
-    for token in tokens:
+    for token in token_list:
         if token[1] == "PERSONAJE":
-            character_name = token[3].upper()
+            character_name = complex_names(token[3].upper())
             if character_name not in characters:
                 characters[character_name] = generate_random_color()
+    print(characters)
     return characters
 
 
@@ -46,7 +55,8 @@ def get_parent_token_content(token: TokenNode, custom_styles: Dict[str, Paragrap
     full_text = ""
     for child in token.children:
         if child.token_type == "PERSONAJE":
-            full_text += f'<font name="{custom_styles[child.token_type].fontName}" size="{custom_styles[child.token_type].fontSize}" color="{character_colors[child.text.upper()]}">{child.text.upper()}</font>'
+            name = complex_names(child.text.upper())
+            full_text += f'<font name="{custom_styles[child.token_type].fontName}" size="{custom_styles[child.token_type].fontSize}" color="{character_colors[name]}">{name}</font>'
         elif child.token_type == "ACOTACION":
             full_text += f'<font name="{custom_styles[token.token_type].fontName}" size="{custom_styles[token.token_type].fontSize}">{child.full_text}</font>'
         else:

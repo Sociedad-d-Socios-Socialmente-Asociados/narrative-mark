@@ -6,7 +6,7 @@ def tokenize(code) -> Generator[tuple[str, str | None, str, str | Any | None, An
         ('TRANSICION', r'>>.*'),
         ('ESCENA', r'>.*'),
         ('ACCION', r'<[^>]+>'),
-        ('PERSONAJE', r'@(?:[^\s@]+(?:@[^\s@]+)*)'),
+        ('PERSONAJE', r'@(?:[^\s@,.:;]+(?:@[^\s@,.:;]+)*)'),
         ('ACOTACION', r'\([^)]+\)'),
         ('DIALOGO', r'--.*'),
         ('TITULO', r'\[T:\s*[^\]]+\]'),
