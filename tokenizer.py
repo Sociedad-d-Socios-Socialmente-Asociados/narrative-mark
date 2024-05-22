@@ -73,12 +73,5 @@ def tokenize(code) -> Generator[tuple[str, str | None, str, str | Any | None, An
             yield token
         line_num += 1
 
-def run_tokenizer(file_name) -> List[Generator[tuple[str, str | None, str, str | Any | None, Any, int] | Any, Any, None]]:
-    try:
-        with open(file_name, 'r', encoding='utf-8') as file:
-            code = file.read()
-    except FileNotFoundError:
-        print("File not found. If you entered the name of the file, make sure it is in the same folder as the compiler, otherwise, enter the full path of the file.")
-        exit()
-    
+def run_tokenizer(code: str) -> List[Generator[tuple[str, str | None, str, str | Any | None, Any, int] | Any, Any, None]]:
     return list(tokenize(code))
