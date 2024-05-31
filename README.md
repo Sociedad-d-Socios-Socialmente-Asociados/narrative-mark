@@ -1,6 +1,6 @@
-# Manual de Usuario
 
-# Manual Técnico
+
+# Guía de instalación
 ## Instalación del programa
 *  1. Acceder a la liga de Github
 https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark
