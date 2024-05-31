@@ -1,7 +1,9 @@
 
-![3](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/assets/42932766/f957efb5-4e3f-4041-922b-e8a07ea5f55a)
 
 # Guía de instalación
+
+![3](https://github.com/Sociedad-d-Socios-Socialmente-Asociados/narrative-mark/assets/42932766/f957efb5-4e3f-4041-922b-e8a07ea5f55a)
+
 
 ## Instalación del programa
 *  1. Acceder a la liga de Github
